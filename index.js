@@ -14,4 +14,8 @@ let db = mongoose.connection;
 db.on('error', (err) => { console.log('erreur de la BD', err)});
 db.once('open', () => {console.log('connexion de la BD OK!')});
 
+app.get('/', (requete, reponse) => {
+    
+})
+
 app.listen(8000, () => {console.log('Service Web fonctionnel sur 8000')});
