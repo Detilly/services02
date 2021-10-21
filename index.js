@@ -1,6 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+const livresRouter = require('./routes/Livres');
+app.use('/api/livres', livresRouter);
+const clientsRouter = require('./routes/Clients');
+app.use('/api/livres', livresRouter);
 
 app.use(express.json());
 
