@@ -1,0 +1,25 @@
+{
+  "name": "services02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Detilly/services02.git"
+  },
+  "author": "JBV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Detilly/services02/issues"
+  },
+  "homepage": "https://github.com/Detilly/services02#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11",
+    "nodemon": "^2.0.14"
+  }
+}
