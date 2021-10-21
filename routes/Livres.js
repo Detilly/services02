@@ -45,3 +45,5 @@ router.put('/:idLivre', (requete, reponse) => {
         reponse.json(msg);
     });
 });
+
+module.exports = router;

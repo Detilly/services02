@@ -54,3 +54,5 @@ router.put('/:idClient', (requete, reponse) => {
         reponse.json(msg);
     });
 });
+
+module.exports = router;
