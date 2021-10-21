@@ -44,6 +44,10 @@ const mongoose = require('mongoose');
         genre: {
             type: String,
             require: true
+        },
+        image: {
+            type: String,
+            require: true
         }
     });
 
@@ -80,7 +84,8 @@ let Livres = module.exports = mongoose.model('Livres', schemaLivre);
             langue: livre.langue,
             date: livre.date,
             prix: livre.prix,
-            genre: livre.genre
+            genre: livre.genre,
+            image: livre.image
         };
         Livres.findOneAndUpdate(query, nouveauLivre, options, callback);
     }

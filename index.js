@@ -5,6 +5,8 @@ const livresRouter = require('./routes/Livres');
 app.use('/api/livres', livresRouter);
 const clientsRouter = require('./routes/Clients');
 app.use('/api/clients', clientsRouter);
+const genresRouter = require('./routes/Genres');
+app.use('/api/genres', genresRouter);
 
 app.use(express.json());
 
@@ -16,7 +18,8 @@ db.once('open', () => {console.log('connexion de la BD OK!')});
 
 app.get('/', (requete, reponse) => {
     reponse.send(`Utilisez /api/livres pour faire un get des livres... <br> 
-                    Utilisez /api/clients pour faire un get des clients...`);
+                    Utilisez /api/clients pour faire un get des clients...<br> 
+                    Utilisez /api/genres pour faire un get des genres...`);
 });
 
 app.listen(8000, () => {console.log('Service Web fonctionnel sur 8000')});
